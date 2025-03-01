@@ -1,0 +1,59 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateOut {
+    from {
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.theme-fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.theme-fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.rotate-in {
+    animation: rotateIn 0.5s ease-in-out forwards;
+}
+
+.rotate-out {
+    animation: rotateOut 0.5s ease-in-out forwards;
+}
