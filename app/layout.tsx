@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "./_sections/providers";
 import Motion from "./_sections/motion";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <ThemeToggle />
             <Motion>{children}</Motion>
           </ThemeProvider>
         </Providers>
